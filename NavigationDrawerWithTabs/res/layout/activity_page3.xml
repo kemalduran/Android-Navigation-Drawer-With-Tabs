@@ -1,0 +1,37 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 3" />
+    </FrameLayout>
+
+    <!-- Listview to display slider menu -->
+    <FrameLayout
+        android:id="@+id/list_slidermenu"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/list_background"
+         >
+        <fragment
+            android:id="@+id/menu_fragment"
+    		android:name="com.example.navtab.fragments.MenuFragment"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    	</fragment>
+   </FrameLayout> 
+
+
+</android.support.v4.widget.DrawerLayout>

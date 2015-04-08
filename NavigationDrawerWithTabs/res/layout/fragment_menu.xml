@@ -1,0 +1,66 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+    >
+    <FrameLayout android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg"
+        >
+        
+    </FrameLayout>
+    
+        <RelativeLayout
+            style="@style/menu_item"
+            android:tag="0"
+            android:onClick="onClickItem" >
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/menu_icon"
+                android:src="@drawable/ic_home" />
+            <TextView
+                android:id="@+id/title"
+                style="@style/menu_text"
+                android:layout_toRightOf="@id/icon"
+                android:text="Page 1" />
+            <TextView
+                android:id="@+id/counter"
+                style="@style/menu_count"
+                android:text="0" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/menu_item"
+            android:tag="1" 
+            android:onClick="onClickItem" >
+            <ImageView
+                android:id="@+id/icon2"
+                style="@style/menu_icon"
+                android:src="@drawable/ic_people" />
+            <TextView
+                style="@style/menu_text"
+                android:layout_toRightOf="@id/icon2"
+                android:text="Page 2" />
+            <TextView
+                style="@style/menu_count"
+                android:text="0" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/menu_item"
+            android:tag="2"
+            android:onClick="onClickItem" >
+            <ImageView
+                android:id="@+id/icon3"
+                style="@style/menu_icon"
+                android:src="@drawable/ic_photos" />
+            <TextView
+                style="@style/menu_text"
+                android:layout_toRightOf="@id/icon3"
+                android:text="Page 3" />
+        </RelativeLayout>
+        
+</LinearLayout>
